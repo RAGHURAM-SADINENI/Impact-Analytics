@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Redirect, Route, Switch } from 'react-router-dom';
 import AppBarComponent from '../components/AppBar/AppBarComponent';
 import Home from '../components/Home/Home';
 import UserDetails from '../components/UserDetails/UserDetails';
@@ -20,13 +20,14 @@ const AppRouting = (props) => {
     }, [])
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={'/'}>
             <AppBarComponent />
             <Switch>
                 <Route path="/shortlisted" exact component={Results} />
                 <Route path="/rejected" exact component={Results} />
                 <Route path="/home" exact component={Home} />
                 <Route path="/:id" exact component={UserDetails} />
+                <Redirect from="/" to="/home" />
                 <Redirect from="*" to="/home" />
             </Switch>
         </BrowserRouter>
