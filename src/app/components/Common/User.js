@@ -1,6 +1,5 @@
-import { Button, Card, CardActions, CardContent, CardMedia, IconButton, makeStyles, Typography } from '@material-ui/core';
-import React from 'react';
-import LaunchIcon from '@material-ui/icons/Launch';
+import { Card, CardContent, CardMedia, makeStyles, Typography } from '@material-ui/core';
+import React, { useState } from 'react';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -30,9 +29,17 @@ const useStyles = makeStyles((theme) => ({
 const User = (props) => {
 
     const classes = useStyles();
+    const [depth, setDepth] = useState(2);
 
     return (
-        <Card className={classes.root}>
+        <Card
+            className={classes.root}
+            onMouseOver={() => setDepth(10)}
+            onMouseOut={() => setDepth(2)}
+            linkButton={true}
+            onClick={() => props.click()}
+            elevation={depth}
+        >
             <CardMedia
                 component="img"
                 alt="User Photo"
@@ -43,13 +50,8 @@ const User = (props) => {
             <CardContent>
                 <Typography className={classes.text}>
                     {props.name}
-                    <IconButton color="primary" aria-label="more info" component="span" onClick={()=>props.click()}>
-                        <LaunchIcon />
-                    </IconButton>
                 </Typography>
-
             </CardContent>
-
         </Card>
     );
 }

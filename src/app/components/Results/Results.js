@@ -1,7 +1,7 @@
 import { Container, makeStyles } from '@material-ui/core';
 import React from 'react';
 import { connect } from 'react-redux';
-import User from '../Home/User';
+import User from '../Common/User';
 
 const useStyles = makeStyles((theme) => ({
     container: {
