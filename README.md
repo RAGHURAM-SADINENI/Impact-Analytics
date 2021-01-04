@@ -1,5 +1,5 @@
 # Demo Link:
-https://raghuram-sadineni.github.io/impact-analytics/home
+https://raghuram-sadineni.github.io/impact-analytics
 
 ---
 
