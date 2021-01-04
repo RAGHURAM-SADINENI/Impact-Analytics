@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/impact-analytics/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/impact-analytics/static/js/main.ad6b4b5f.chunk.js",
+    "main.js.map": "/impact-analytics/static/js/main.ad6b4b5f.chunk.js.map",
+    "runtime-main.js": "/impact-analytics/static/js/runtime-main.77219e60.js",
+    "runtime-main.js.map": "/impact-analytics/static/js/runtime-main.77219e60.js.map",
+    "static/js/2.61c4cd01.chunk.js": "/impact-analytics/static/js/2.61c4cd01.chunk.js",
+    "static/js/2.61c4cd01.chunk.js.map": "/impact-analytics/static/js/2.61c4cd01.chunk.js.map",
+    "static/js/3.5d30f4c6.chunk.js": "/impact-analytics/static/js/3.5d30f4c6.chunk.js",
+    "static/js/3.5d30f4c6.chunk.js.map": "/impact-analytics/static/js/3.5d30f4c6.chunk.js.map",
+    "index.html": "/impact-analytics/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/impact-analytics/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.61c4cd01.chunk.js.LICENSE.txt": "/impact-analytics/static/js/2.61c4cd01.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.77219e60.js",
+    "static/js/2.61c4cd01.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.ad6b4b5f.chunk.js"
+  ]
+}
