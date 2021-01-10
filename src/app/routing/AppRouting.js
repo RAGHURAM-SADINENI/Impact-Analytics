@@ -20,7 +20,7 @@ const AppRouting = (props) => {
     }, [])
 
     return (
-        <BrowserRouter basename={'/'}>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <AppBarComponent />
             <Switch>
                 <Route path="/shortlisted" exact component={Results} />
